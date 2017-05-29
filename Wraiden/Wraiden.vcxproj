@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="EnemyPlane.h" />
+    <ClInclude Include="initial.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="MyPlane.h" />
     <ClInclude Include="Plane.h" />
     <ClInclude Include="RaidenSystem.h" />
@@ -148,6 +150,7 @@
   <ItemGroup>
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="EnemyPlane.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="MyPlane.cpp" />
     <ClCompile Include="Plane.cpp" />
     <ClCompile Include="RaidenSystem.cpp" />

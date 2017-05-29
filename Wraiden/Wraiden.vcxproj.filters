@@ -30,6 +30,12 @@
     <ClInclude Include="RaidenSystem.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="initial.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bullet.cpp">
@@ -45,6 +51,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="RaidenSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
