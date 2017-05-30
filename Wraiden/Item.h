@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include "initial.h"
 using namespace std;
 class Item
 {
@@ -10,6 +11,7 @@ protected:
 	bool exist;  //是否还存在
 public:
 	bool check(int l, int h);  //检查出界
+	bool clear(vector<vector<Gragh>> &output);  //从图中删去
 	Item();
 	~Item();
 };
