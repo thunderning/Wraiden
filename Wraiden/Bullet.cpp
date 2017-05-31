@@ -51,9 +51,27 @@ bool Bullet::fly_by_direction(int k, int l, int h)
 	return false;
 }
 
-Bullet::Bullet()
+Bullet::Bullet(int dmg, int spd, int frm, int drt, int x, int y, int len, int hei, char * p)
 {
+	damage = dmg;
+	speed = spd;
+	from = frm;
+	direction = drt;
+	X = x;
+	Y = y;
+	length = len;
+	height = hei;
+	for (int i = 0; i < hei; i++)
+	{
+		vector<char> t;
+		for (int j = 0; j < len; j++)
+			t.push_back(p[i*len + j]);
+		pic.push_back(t);
+	}
+	exist = 1;
 }
+
+
 
 
 Bullet::~Bullet()

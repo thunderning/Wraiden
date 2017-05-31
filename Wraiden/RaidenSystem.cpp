@@ -12,7 +12,10 @@ void RaidenSystem::deal_with_enemys()
 		enemys[i].set(i, output);
 	}
 	srand(time(0));
-	EnemyPlane ep;  //TODO:完成初始化
+	int x = rand() % length + 1;
+	EnemyPlane ep(EP_life,EP_speed,
+		Bullet::Bullet(EB_damage,EB_speed,1,-(rand()%4),x,1,EB_len,EB_hei,EB_pic),
+		-(rand()%4),x,1,EP_len,EP_hei,EP_pic);  //TODO:完成初始化
 	enemys.push_back(ep);
 }
 
