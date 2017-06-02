@@ -9,6 +9,7 @@ void RaidenSystem::deal_with_enemys()
 	for (auto i=0;i!=enemys.size();i++)
 	{
 		enemys[i].fly_by_direction(enemy_plane_timer,length,height);
+		enemys[i].flesh_bullet();
 		enemys[i].set(i, output);
 	}
 	srand(time(0));

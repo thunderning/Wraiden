@@ -86,3 +86,8 @@ void EnemyPlane::set(int t, vector<vector<Gragh>> output)
 			output[Y + i][X + j].source = t;
 		}
 }
+
+void EnemyPlane::flesh_bullet()
+{
+	bullet.change_xy(X, Y);
+}

@@ -13,6 +13,7 @@ protected:
 					//    -1 左下；-2 正下；-3 右下；
 public:
 	bool fly_by_direction(int k,int l,int h);
+	void change_xy(int px, int py);
 	Bullet(int dmg,int spd,int frm,int drt,int x,int y,int len,int hei,char *p);
 	~Bullet();
 };

@@ -51,6 +51,13 @@ bool Bullet::fly_by_direction(int k, int l, int h)
 	return false;
 }
 
+void Bullet::change_xy(int px, int py)
+{
+	X = px;
+	Y = py;
+	return;
+}
+
 Bullet::Bullet(int dmg, int spd, int frm, int drt, int x, int y, int len, int hei, char * p)
 {
 	damage = dmg;

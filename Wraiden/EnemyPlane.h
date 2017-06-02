@@ -11,5 +11,6 @@ public:
 	~EnemyPlane();
 	bool fly_by_direction(int k, int l, int h);
 	void set(int t, vector<vector<Gragh>> output);
+	void flesh_bullet();
 };
 
