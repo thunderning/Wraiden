@@ -29,7 +29,7 @@ EnemyPlane::~EnemyPlane()
 
 bool EnemyPlane::fly_by_direction(int k, int l, int h)
 {
-	if (k < speed) return false;
+	if (k % speed !=0) return false;
 	switch (direction)
 	{
 	case 1:
@@ -76,14 +76,14 @@ bool EnemyPlane::fly_by_direction(int k, int l, int h)
 	return false;
 }
 
-void EnemyPlane::set(int t, vector<vector<Gragh>> output)
+void EnemyPlane::set(int t, vector<vector<char>> output, vector<vector<int>> quality, vector<vector<int>> source)
 {
 	for(int i=0;i<height;i++)
 		for (int j = 0; j < length; j++)
 		{
-			output[Y + i][X + j].output = pic[i][j];
-			output[Y + i][X + j].quality = 3;  //敌方飞机
-			output[Y + i][X + j].source = t;
+			output[Y + i][X + j] = pic[i][j];
+			quality[Y + i][X + j] = 3;  //敌方飞机
+			source[Y + i][X + j] = t;
 		}
 }
 

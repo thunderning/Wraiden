@@ -10,7 +10,7 @@ public:
 	EnemyPlane(int lf, int p_spd, Bullet a,int drt, int x, int y, int len, int hei, char * p);
 	~EnemyPlane();
 	bool fly_by_direction(int k, int l, int h);
-	void set(int t, vector<vector<Gragh>> output);
+	void set(int t, vector<vector<char>> output, vector<vector<int>> quality, vector<vector<int>> source);
 	void flesh_bullet();
 };
 

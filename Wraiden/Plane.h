@@ -13,6 +13,10 @@ protected:
 public:
 	Plane();
 	~Plane();
+	Bullet launch_bullet();
+	//int get_life();
+	int change_life(int dmg);
+	void flesh_bullet();
 	bool move_to_left(int k,int l,int h);  //边界值，1~l和1~h为可移动范围
 	bool move_to_right(int k,int l, int h);  //边界值，1~l和1~h为可移动范围
 	bool move_to_up(int k, int l, int h);  //边界值，1~l和1~h为可移动范围

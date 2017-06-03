@@ -1,6 +1,17 @@
 #include "MyPlane.h"
 
 
+void MyPlane::set(vector<vector<char>> output, vector<vector<int>> quality, vector<vector<int>> source)
+{
+	for (int i = 0; i<height; i++)
+		for (int j = 0; j < length; j++)
+		{
+			output[Y + i][X + j] = pic[i][j];
+			quality[Y + i][X + j] = 1;  //µÐ·½·É»ú
+			source[Y + i][X + j] = -1;
+		}
+}
+
 MyPlane::MyPlane(int lf, int p_spd, Bullet a, int x, int y, int len, int hei, char * p)
 {
 	life = lf;
@@ -19,6 +30,10 @@ MyPlane::MyPlane(int lf, int p_spd, Bullet a, int x, int y, int len, int hei, ch
 	}
 	exist = 1;
 
+}
+
+MyPlane::MyPlane()
+{
 }
 
 MyPlane::~MyPlane()

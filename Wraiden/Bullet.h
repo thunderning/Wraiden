@@ -14,7 +14,11 @@ protected:
 public:
 	bool fly_by_direction(int k,int l,int h);
 	void change_xy(int px, int py);
+	int get_speed();
+	int get_damage();
+	int set(int t,vector<vector<char>> output, vector<vector<int>> quality, vector<vector<int>> source);
 	Bullet(int dmg,int spd,int frm,int drt,int x,int y,int len,int hei,char *p);
+	Bullet();
 	~Bullet();
 };
 

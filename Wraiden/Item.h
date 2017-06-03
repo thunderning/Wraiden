@@ -10,8 +10,9 @@ protected:
 	vector<vector<char>> pic;	//具体图案
 	bool exist;  //是否还存在
 public:
+	bool is_exist();
 	bool check(int l, int h);  //检查出界
-	bool clear(vector<vector<Gragh>> &output);  //从图中删去
+	bool clear(vector<vector<char>> output, vector<vector<int>> quality, vector<vector<int>> source);  //从图中删去
 	Item();
 	~Item();
 };

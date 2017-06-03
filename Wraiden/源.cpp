@@ -19,6 +19,7 @@ int main()
 		rs.deal_with_myplane();
 		rs.deal_with_bullets();
 		rs.print_output();
+		if (!rs.check_myplane()) break;
 	}
 	return 0;
 }
